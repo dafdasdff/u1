@@ -1,0 +1,10 @@
+  if not os.path.exists(f"./download/{title}"):
+        os.mkdir(f"./download/{title}")
+    # 保存封面图1
+    save_img(cover1, title, "cover1")
+    # 保存封面图2
+    save_img(cover2, title, "cover2")
+    # 保存大头贴
+    save_img(icon, title, "icon")
+    save_audio(title, cn_name, cn_audios)
+    save_audio(title, jp_name, jp_audios)
